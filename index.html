@@ -1,0 +1,54 @@
+<!doctype html>
+<html id="html" lang="en" data-bs-theme="dark" style="background-color: var(--bs-body)">
+  <head>
+
+    <title id="AppTitle">writea</title>
+
+    <!-- Meta/link tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="./src/assets/favicon.ico">
+    <meta name="theme-color" content="#E87C86" id="AppColor"/>
+    <meta property="og:description" content="fast, comfy and open-source alternative for blogs"/>
+    <meta property="og:image" content="/src/assets/embed.png"/>
+
+    <!-- Scripts and stylesheets -->
+    <link href="./src/vendor/css/materialstyle.min.css" rel="stylesheet">
+    <link href="./src/vendor/css/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="./src/vendor/css/emoji.css" rel="stylesheet">
+    <link href="./src/vendor/hljs/styles/github-dark-dimmed.min.css" rel="stylesheet">
+    <link href="./src/assets/style.css" rel="stylesheet">
+    <link href="./themes/Default.css" rel="stylesheet">
+    <script src="./src/vendor/js/materialstyle.min.js"></script>
+    <script src="./src/vendor/js/js-yaml.min.js"></script>
+    <script src="./src/vendor/js/marked.min.js"></script>
+    <script src="./src/vendor/js/popper.min.js"></script>
+    <script src="./src/vendor/js/mdc.ripple.min.js"></script>
+    <script src="./src/vendor/js/emoji.min.js"></script>
+    <script src="./src/vendor/hljs/highlight.min.js"></script>
+
+    <!-- Application -->
+    <script src="./src/App.js"></script>
+    <script src="./src/imports/ImportElements.js"></script>
+    <script src="./src/imports/ImportConfigurations.js"></script>
+    <script src="./src/helpers/ProgressBar.js"></script>
+    <script src="./src/helpers/ModifyAppTitle.js"></script>
+    <script src="./src/helpers/RenderBlogFeatures.js"></script>
+    <script src="./src/router/Route.js"></script>
+    <script src="./src/router/Import.js"></script>
+    <script src="./src/router/Unload.js"></script>
+
+  </head>
+  <body>
+
+    <div id="ProgressBarElement" style="width: 0%"></div>
+
+    <div class="container py-5" id="AppContainer">
+      <div id="App"></div>
+    </div>
+
+    <writea-theme-config></writea-theme-config>
+
+  </body>
+  <style id="AppTheme"></style>
+</html>
